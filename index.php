@@ -1,5 +1,5 @@
 	<?php
-echo 'Hellow おいす!!';
+echo 'Welcome ラジオ好き';
 ?>
 <!DOCTYPE html>
 <meta charset="UTF-8">
