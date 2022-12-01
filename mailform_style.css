@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #281305;
+  background-color: #ffdcf9;
   font-family: 'Anton', sans-serif;
   font-family: 'M PLUS 1', sans-serif;
   font-size: 19px;
@@ -66,7 +66,8 @@ header {
     height: 5.8vw;
     padding-top: 3px;
     padding-bottom: 3px;
-    background-color: #0f414de8;
+    background-color: #e544cde8;
+
     padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%に */
     position: fixed; /* ウィンドウを基準に画面に固定 */
@@ -75,6 +76,7 @@ header {
     display: flex; /* 中の要素を横並びにする */
     align-items: center; /* 中の要素を上下中央に並べる */
     z-index: 999;
+    opacity: 1;
     }
 header .gnav .menu {
     display: flex; /* 中の要素を横並びにする */
@@ -103,26 +105,31 @@ main ul li, ol li {
     padding-bottom: 1.7em;
     padding-top: 0em;
     }
+
+  iframe {
+    border: none;
+    width: 30vw;
+    height: 28vw;
+    }
 /* 画像カード形式 */
 #cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  border-bottom: solid #8bafb9 1px;/*下のボーダー*/
 }
 .card {
   width: 30vw;
   height: 28vw;
   border: 1px solid lightgray;
   margin: 0 0 50px 50px;
-  background-color: #6d797b8a;
+  background-color: #e456c78a;
 }
 #card13-14 {
   width: 30vw;
-  height: 50vw;
+  height: 20vw;
   text-align: center;
-  background-color: #9b743a8a;
+  background-color: #e456c78a;
 }
 .picture img {
   width: 100%;
