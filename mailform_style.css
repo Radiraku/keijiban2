@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body {
+  background-color: #281305;
+  font-family: 'Anton', sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 19px;
+  letter-spacing: 0.09em;
+  color: #ebe7dce8;
+  margin-right:  12vw;
+  margin-left:   12vw;
+  margin-top: 6.5vw;
+  padding: 0;      /* 内側の余白を消す(念のため) */
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 5.8vw; /* ずらしたい高さ */
+    margin-top: -5.8vw; /* heightに対するネガティブマージン */
+    visibility: hidden,
+}
+
+/* フォント */
+header {
+    font-family: 'M PLUS 1', sans-serif;
+    font-size: 1.8vw;
+    color: #ebe7dce8;
+    letter-spacing: 0.05em;
+}
+a{
+    color: #ebe7dce8;
+}
+a:visited{
+    color: #ebe7dce8;
+}
+a.no-underline {
+  text-decoration: none;
+}
+a.underline-hover:hover {
+  text-decoration: underline;
+}
+h1 {
+    padding-left:   6vw;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 3.2vw;
+    color: #ebdce8e8;
+}
+h2 {
+    font-family: 'Playball', cursive;
+    letter-spacing: 0.05em;
+    font-size: 39px;
+    text-align: center;
+}
+h3 {
+    margin-left: 30px;
+    font-family: 'Playball', cursive;
+    letter-spacing: 0.05em;
+    font-size: 31px;
+    text-align: center;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 5.8vw;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #0f414de8;
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%に */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index: 999;
+    }
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+    }
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+    margin-left: 70px; /* メニューそれぞれに間隔 */
+    margin-top: 3px;
+    }
+
+main {
+    margin-top: 5.8vw;
+    z-index: 99;
+    align-items: center; /* 中の要素を上下中央に並べる */
+    }
+
+/* 箇条書き */
+main ul, ol {
+    border: solid 2px lightgray;/*線の種類 太さ 色*/
+    padding: 1em 20px 0.5em 50px;
+    margin-right:  7vw;
+    margin-left:  3vw;
+    }
+main ul li, ol li {
+    line-height: 1.5;
+    padding-bottom: 1.7em;
+    padding-top: 0em;
+    }
+/* 画像カード形式 */
+#cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border-bottom: solid #8bafb9 1px;/*下のボーダー*/
+}
+.card {
+  width: 30vw;
+  height: 28vw;
+  border: 1px solid lightgray;
+  margin: 0 0 50px 50px;
+  background-color: #6d797b8a;
+}
+#card13-14 {
+  width: 30vw;
+  height: 50vw;
+  text-align: center;
+  background-color: #9b743a8a;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+}  
+.picture:hover{
+  opacity: 0.45;
+  transition: 0.6s;
+}
+.description {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  box-sizing: border-box;
+}  
+.description p {
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
