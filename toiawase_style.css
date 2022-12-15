@@ -1,0 +1,238 @@
+@charset "UTF-8";
+body {
+  background-color: #316467;
+  font-family: 'Anton', sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 62.5%;
+  font-size: 1.9rem;
+  letter-spacing: 0.09em;
+  color: #093935e8;
+  margin-right:  3vw;
+  margin-left:   3vw;
+  margin-top: 6.5vw;
+  padding: 0;      /* 内側の余白を消す(念のため) */
+}
+
+:target::before {
+    content: "";
+    display: block;
+    height: 5.8vw; /* ずらしたい高さ */
+    margin-top: -5.8vw; /* heightに対するネガティブマージン */
+    visibility: hidden,
+}
+
+/* フォント */
+header{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 1.8vw;
+  color: #ed9e00;
+  letter-spacing: 0.05em;
+}
+
+.header a{
+    color: #edc500;
+}
+.header a:visited{
+  color: #edc500;
+}
+a{
+  color: #093935e8;
+}
+a:visited{
+color: #093935e8;
+}
+a.no-underline {
+  text-decoration: none;
+}
+a.underline-hover:hover {
+  text-decoration: none;
+}
+h1 {
+    padding-left:   6vw;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 3.2vw;
+    color: #ed9e00;
+}
+h2 {
+    font-family: 'M PLUS 1', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 39px;
+    text-align: center;
+}
+h3 {
+    font-family: 'M PLUS 1', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 2.9vw;
+    text-align: center;
+}
+
+/* ヘッダー */
+header {
+    width: 100%;
+    height: 5.8vw;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #C23B48;
+
+    padding: 2rem 2rem; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%に */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index: 999;
+    opacity: 1;
+}
+
+    header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+    }
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+    margin-left: 70px; /* メニューそれぞれに間隔 */
+    margin-top: 3px;
+    }
+
+main {
+    margin-top: 5.8vw;
+    z-index: 99;
+    align-items: center; /* 中の要素を上下中央に並べる */
+    }
+
+/* ボタン */
+/* <a href="" class="btn btn-flat"><span>PUSH！</span></a> */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+a.btn-flat span {
+  position: relative;
+}
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 500%;
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  background: #00b7ee;
+}
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+/* メイン背景#527B7D
+コンテンツ ベージュ#D1CEB3
+ヘッダー人参#C23B48 */
+
+/* 箇条書き */
+main ul, ol {
+    border: solid 2px lightgray;/*線の種類 太さ 色*/
+    padding: 1em 20px 0.5em 0;
+    margin-right:  3vw;
+    margin-left:  3vw;
+    }
+main ul li, ol li {
+    line-height: 1.5;
+    padding-bottom: 1.7em;
+    padding-top: 0em;
+    }
+
+  iframe {
+    border: none;
+    width: 36vw;
+    height: 20vw;
+    }
+/* 画像カード形式 */
+#cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.card {
+  width: 35vw;
+  height: 40vw;
+  margin: 0 0 1.5vw 1.5vw;
+  opacity: 1;
+  padding-top: 2vw;
+}
+#card11 {
+  width: 34vw;
+  height: 10vw;
+  text-align: center;
+  opacity: 1;
+}
+#card13-14 {
+  width: 40vw;
+  height: 40vw;
+  text-align: center;
+  border: 1px solid lightgray;
+  background-color: #C7C2A9;
+  opacity: 1;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+}  
+.picture:hover{
+  opacity: 0.45;
+  transition: 0.6s;
+}
+.description {
+  width: 100%;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  box-sizing: border-box;
+}  
+.description p {
+  height: 4vw;
+  line-height: 4vw;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+}
